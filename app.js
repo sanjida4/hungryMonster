@@ -58,7 +58,7 @@ function getMealById(idMeal){
 //add meal to dom
 function addMealToDOM(meal){
     const ingredients = [];
-    for(let i =0; i<=20; i++){
+    for(let i = 1; i<=20; i++){
         if(meal[`strIngredient${i}`]){
             ingredients.push(`
             ${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}
@@ -67,16 +67,16 @@ function addMealToDOM(meal){
         else{
             break;
         }
-    }
+ }
     
     single_mealElement.innerHTML = `
     <div class = "single-meal">
     <h1>${meal.strMeal}</h1>
     <img src = "${meal.strMealThumb}" alt = "${meal.strMeal}"/>
-    <div class = "single-meal-info">
+    <div class = "main">
     <h2>Ingredients</h2>
     <ul>
-    ${ingredients.map(ing => `<li>${ing}</li>`).join('')}
+    ${ingredients.map(ing => `<li>${ing}</li>`).join("")}
     </ul>
     </div>
     </div>
