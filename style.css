@@ -25,10 +25,14 @@ h2{
     justify-content: center;
     text-align: center;
 }
-.nav{
+.navbar{
+    list-style-type: none;
     text-decoration: none;
 }
 
+.nav{
+    display: flex;
+}
 .flex{
     display: flex;
 }
