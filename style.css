@@ -9,7 +9,9 @@ body{
     margin: 0;
 }
 
-
+h1{
+    color: black;
+}
 h2{
     color: #3B2D64;
     font-size: 40px;
@@ -23,9 +25,8 @@ h2{
     justify-content: center;
     text-align: center;
 }
-.nav-bar{
-    width: 100%;
-    color: white ;
+.nav{
+    text-decoration: none;
 }
 
 .flex{
